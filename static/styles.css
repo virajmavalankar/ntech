@@ -1,0 +1,77 @@
+
+
+#banner{
+	background-image: url("images/ARF_Slider.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 120px;
+  	width: 100%;
+
+}
+
+#myNavbar ul li a{
+	
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#myNavbar ul li a:hover{
+
+color: #7AA4BA;
+
+}
+#myNavbar ul li a{
+
+color: black;
+
+}
+
+#myNavbar ul li{
+	font-size: 16px;
+	font-weight: bold;
+
+}
+
+#nav{
+
+background-color: #3A56A1;
+}
+#nav li a:hover{
+	background:  none;
+	color: #fff;
+	text-decoration: underline;
+}
+#nav_a{
+	color:  #fff;
+}
+
+
+.block:hover{
+	background-image: linear-gradient(to left,transparent,transparent 50%,#3A56A1 50%,
+		#3A56A1);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in; 
+}
+
+
+h1, h2, h4, p, b{
+	font-family: font-family: 'Source Sans Pro', sans-serif;
+}
+ 
+
+#fb:hover{
+
+  	color: #4267B2;
+        }
+#insta:hover{
+  	color: #8a3ab9;
+        }
+#twitter:hover{
+  	color:#1DA1F2;
+        }
+#link:hover{
+  	color: #0077b5;
+        }
+#youtube:hover{
+  	color: #FF0000;
+        }

@@ -1,0 +1,75 @@
+{% include 'header.html' %}
+
+<br>
+
+
+<div class="container-fluid" style="margin-top:10%;">
+  <div class="row">
+    <div class="col-md-4 col-lg-4 hidden-md hidden-lg">
+      <img src="/static/images/ads.jpg" style="width:100%;">
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-8">
+        <br>
+        <p style="text-align: justify;font-size: 16px;line-height: 24px;color: #000;">
+            Invest your time and creativity with us to enhance your income. Aspects Fieldwork & Research, a globally leading market research organisation, 
+            needs your valuable opinion. Join our panel to influence the end consumer with your viewpoint and get rewarded for the same. 
+        </p>
+        <h4>
+            <b>
+                As a member of our panel, you will be participating in research studies in the form of: 
+            </b>
+        </h4>
+        <div id="selection">
+            <ul>
+                <li>An online survey</li>
+                <li>Through telephone/internet</li>
+                <li>Personal interviews or focused group discussions</li>
+                <li>A member of an online community</li>
+                <li>Product reviewing </li>
+            </ul> 
+        </div>
+        <br>
+        <!--<center>-->
+            <div style="width: 70%;">
+                                <form action="mail_panel.php" method="POST" class="form">
+                    <label>Enter Name</label>
+                    <input type="text" placeholder="Enter Name" name="name" class="form-control" required><br>
+                    <label>Enter Email</label>
+                    <input type="email" placeholder="Enter Email" name="email" class="form-control" required><br>
+                    <label>Enter Phone</label>
+                    <input type="text" name="con" class="form-control"  placeholder="Enter Contact with Country Code. For eg +91" required>
+                <br>
+                    <label>Enter Industry</label>
+                    <input type="text" placeholder="Enter Industry" name="industry" class="form-control" required><br>
+                    <label>Enter Country</label>
+                    <input type="text" placeholder="Enter Country" name="Country" class="form-control" required><br>
+                    <label>Select Specialization </label> <!-- <span id="specialization" class="text-primary">If not in list Add Here</span> -->
+                    <input type="text" placeholder="Enter Specialization" name="Specialization" class="form-control" required><br>
+                    <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                </form>
+                <br>
+                <script>
+                        $(document).ready(function(){
+                            $("#specialization").click(function(){
+                                $("#form_new_add").fadeToggle();
+                            });
+                        });
+                    </script>
+                                    <form action="#" method="POST" id="form_new_add" style="display: none;">
+                    <input type="text" class="form-control" name="new" placeholder="Enter New Specialization">
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-md" name="spec_mail">Submit</button> 
+                </form>
+            </div>
+            <!--</center>-->
+    </div>
+    <div class="col-md-4 col-lg-4 hidden-sm hidden-xs">
+        <img src="/static/images/ads.jpg" style="width:100%;margin-top: 40%;">
+    </div>
+  </div>
+</div>
+    
+    
+	
+<hr>
+{% include 'footer.html' %}
